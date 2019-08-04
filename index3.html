@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 350px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            display: none;
+        }
+        #box1{
+            width:32.75%;
+            height: 66px;
+            background-color: yellow;
+            border:1px solid black;
+            
+        }
+        #box2{
+            width:32.75%;
+            height: 66px;
+            background-color: red;
+            border:1px solid black;
+        }
+        #box3{
+            width:32.75%;
+            height: 66px;
+            background-color: blue;
+            border:1px solid black;
+        }
+        #box4{
+            width:32.75%;
+            height: 66px;
+            background-color: orange;
+            border:1px solid black;
+        }
+        #box5{
+            width:32.75%;
+            height: 66px;
+            background-color: bisque;
+            border:1px solid black;
+        }
+        #box6{
+            width:32.75%;
+            height: 66px;
+            background-color: chocolate;
+            border:1px solid black;
+        }
+        #box7{
+            width:32.75%;
+            height: 66px;
+            background-color: darkmagenta;
+            border:1px solid black;
+        }
+        #box8{
+            width:32.75%;
+            height: 66px;
+            background-color: darkred;
+            border:1px solid black;
+        }
+        #box9{
+            width:32.75%;
+            height: 66px;
+            background-color: crimson;
+            border:1px solid black;
+        }
+        #boxall2{
+            width: 350px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            display: none;
+        }
+        #boximage1{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage2{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage3{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage4{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage5{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage6{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage7{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage8{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+        #boximage9{
+            width:32.75%;
+            height: 66px;
+            border:1px solid black;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+   <h1 id="color">Колір</h1>
+   <h1 id="image">Зображення</h1>
+   <div id="box">
+       <div id="box1"></div>
+       <div id="box2"></div>
+       <div id="box3"></div>
+       <div id="box4"></div>
+       <div id="box5"></div>
+       <div id="box6"></div>
+       <div id="box7"></div>
+       <div id="box8"></div>
+       <div id="box9"></div>
+       
+   </div>
+   <div id="boxall2">
+       <img id="boximage1" src="zastavka-tokyo-dizayni.ru-1.jpg" >
+       <img id="boximage2" src="завантаження.jpg" >
+       <img id="boximage3" src="images.jpg" >
+       <img id="boximage4" src="завантаження (1).jpg" >
+       <img id="boximage5" src="images (1).jpg" >
+       <img id="boximage6" src="images (2).jpg" >
+       <img id="boximage7" src="images (3).jpg" >
+       <img id="boximage8" src="images (4).jpg" >
+       <img id="boximage9" src="images (5).jpg" >
+   </div>
+   
+   
+   
+   
+   
+   <script>
+    document.getElementById('color').onclick = function(){
+        document.getElementById('box').style.display = 'flex'
+        document.getElementById('boxall2').style.display = 'none'
+    }
+    document.getElementById('box1').onclick = function(){
+        document.body.style.backgroundColor = 'yellow'
+         document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box2').onclick = function(){
+        document.body.style.backgroundColor = 'red'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box3').onclick = function(){
+        document.body.style.backgroundColor = 'blue'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box4').onclick = function(){
+        document.body.style.backgroundColor = 'orange'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box5').onclick = function(){
+        document.body.style.backgroundColor = 'bisque'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box6').onclick = function(){
+        document.body.style.backgroundColor = 'chocolate'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box7').onclick = function(){
+        document.body.style.backgroundColor = 'darkmagenta'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box8').onclick = function(){
+        document.body.style.backgroundColor = 'darkred'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('box9').onclick = function(){
+        document.body.style.backgroundColor = 'crimson'
+        document.body.style.backgroundImage = ""
+
+    }
+    document.getElementById('image').onclick = function(){
+        document.getElementById('boxall2').style.display = 'flex'
+        document.getElementById('box').style.display = 'none'
+    }
+    document.getElementById('boximage1').onclick = function(){
+        document.body.style.backgroundImage = "url('zastavka-tokyo-dizayni.ru-1.jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage2').onclick = function(){
+        document.body.style.backgroundImage = "url('завантаження.jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage3').onclick = function(){
+        document.body.style.backgroundImage = "url('images.jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage4').onclick = function(){
+        document.body.style.backgroundImage = "url('завантаження (1).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage5').onclick = function(){
+        document.body.style.backgroundImage = "url('images (1).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage6').onclick = function(){
+        document.body.style.backgroundImage = "url('images (2).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage7').onclick = function(){
+        document.body.style.backgroundImage = "url('images (3).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage8').onclick = function(){
+        document.body.style.backgroundImage = "url('images (4).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    document.getElementById('boximage9').onclick = function(){
+        document.body.style.backgroundImage = "url('images (5).jpg')"
+        document.body.style.backgroundSize = "cover"
+    }
+    
+    
+    </script>
+   
+   
+   
+    
+</body>
+</html>

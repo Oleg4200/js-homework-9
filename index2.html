@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#leprMan{
+			width:100px;
+			height: 200px;
+			position: absolute;
+			top: 100px;
+			left: 700px;
+		}
+		#up{
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+		#left{
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+		#right{
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+		#down{
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<img id="leprMan" src="220px-Leprechaun_ill_artlibre_jnl.png">
+	<button id="up">Up</button>
+	<button id="left">Left</button>
+	<button id="right">Right</button>
+	<button id="down">Down</button>
+
+
+
+	<script>
+		/*let lapr = document.getElementById('leprMan')
+		window.addEventListener('keydown', function(e){
+		if(e.keyCode==38){
+			document.getElementById('up')
+		   	console.log(e.code)
+        		let goUp = lapr.offsetTop
+
+        		if(goUp>0){
+
+            		lapr.style.top= goUp - 10 + "px"
+            		lapr.style.transform = "rotate(5deg)" 
+       			}  
+
+    		}
+    		if(e.keyCode==39){
+        		let goRight = lapr.offsetLeft
+        		console.log(window.innerWidth)
+        		if(goRight<window.innerWidth-170){
+          			lapr.style.left= goRight + 10 + "px" 
+          			lapr.style.transform = "rotate(90deg)"  
+        		}     
+    		}
+    		if(e.keyCode==40){
+        		let goDown = lapr.offsetTop
+        		console.log(window.innerHeight)
+        		if(goDown<window.innerHeight-220){
+          			lapr.style.top= goDown + 10 + "px" 
+          			lapr.style.transform = "rotate(180deg)" 
+        		}     
+    		}
+    		if(e.keyCode==37){
+    			console.log(e.code)
+               let goLeft = lapr.offsetLeft
+        	   if(goLeft>50){
+           			lapr.style.left= goLeft - 10 + "px" 
+           			lapr.style.transform = "rotate(-90deg)" 
+           			
+
+        		}     
+            }
+		})*/
+
+        
+        
+            let lapr = document.getElementById('leprMan')
+			document.getElementById('up').onclick = function(){
+                let goUp = lapr.offsetTop
+                if(goUp>50){
+
+            		lapr.style.top= goUp - 10 + "px"
+            		lapr.style.transform = "rotate(5deg)" 
+       			}
+            } 
+		   	document.getElementById('right').onclick = function(){
+                let goRight = lapr.offsetLeft
+        		console.log(window.innerWidth)
+        		if(goRight<window.innerWidth-170){
+          			lapr.style.left= goRight + 10 + "px" 
+          			lapr.style.transform = "rotate(90deg)"  
+        		}     
+                
+            }
+        		
+            document.getElementById('down').onclick = function(){
+                
+                let goDown = lapr.offsetTop
+        		console.log(window.innerHeight)
+        		if(goDown<window.innerHeight-220){
+          			lapr.style.top= goDown + 10 + "px" 
+          			lapr.style.transform = "rotate(180deg)" 
+        		}   
+            }
+        		  
+            document.getElementById('left').onclick = function(){
+                
+               let goLeft = lapr.offsetLeft
+        	   if(goLeft>50){
+           			lapr.style.left= goLeft - 10 + "px" 
+           			lapr.style.transform = "rotate(-90deg)" 
+           			
+
+        		}     
+                
+            }
+    		
+    		
+    	
+    		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+	</script>
+
+</body>
+</html>
